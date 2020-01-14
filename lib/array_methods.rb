@@ -1,11 +1,10 @@
 def find_element_index(array, value_to_find)
-  count = 0
-  while array[count] do
+  array.length.times do |count|
     if array[count] == value_to_find
       return count
     end
-    count += 1
   end
+  nil
 end
 
 def find_max_value(array)
